@@ -1,0 +1,249 @@
+.menu
+    .menu__items
+        display: flex
+        justify-content: space-between
+        margin: 40px 0
+        .menu__item__content
+            ul
+                display: flex
+                gap: 40px
+                list-style-type: none
+                .core__content__darkblue
+                    position: relative
+                    text-decoration: none
+                    font-weight: 500
+                .core__content__darkblue::after
+                    content: ''
+                    background: #FA9F42
+                    width: 0
+                    height: 2px
+                    margin: auto
+                    display: block
+                    transition: 0.3s
+                .core__content__darkblue:hover::after
+                    width: 100%
+                .line
+                    color: #353A5A
+                    display: inline-block
+                    position: relative
+                    text-decoration: none
+                .line::after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -6px
+                    width: 100%
+                    border-bottom: 3px dashed #FA9F42
+
+
+
+
+    .menu__item__link-back
+        display: flex
+        gap: 15px
+        a
+            text-decoration: none
+        .core__content
+            color: var(--dark, #353A5A)
+            font-size: 14px
+            line-height: 185%
+            font-weight:400
+            opacity: 0.5
+
+
+.main
+    margin: 60px 0 120px
+    .main__items
+        display: flex
+        flex-direction: column
+        gap: 40px
+
+        .main__item__title
+            h1
+                width: 1070px
+        .main__item__content
+            display: flex
+            flex-direction: column
+            gap: 25px
+            h2
+                font-size: 22px
+                width: 870px
+            span
+                display: flex
+                width: 809px
+        .main__item__nums
+            display: flex
+            gap: 30px
+            padding-top: 40px
+            .main__item__num
+                display: flex
+                flex-direction: column
+                h2
+                    color: var(--green, #10B582)
+                    width: 270px
+                    text-align: center
+                span
+                    width: 270px
+                    text-align: center
+        .main__item__image
+            height: 440px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+
+.topical
+    background: var(--green, #10B582)
+    height: 100%
+    padding: 120px 0
+    .topical__items
+        display: flex
+        column-gap: 90px
+        .topical__item__content
+            display: flex
+            flex-direction: column
+            row-gap: 20px
+            span
+                width: 478px
+        .topical__item__image
+            border-radius: 120px 0px 0px 0px
+            border: 2px dashed var(--light, #FDFDFD)
+            width: 540px
+            height: 286px
+            padding: 30px
+
+
+.learn
+    margin: 120px 0
+    .learn__items
+        display: flex
+        flex-direction: column
+        gap: 60px
+        .learn__item__title
+            text-align: center
+        .learn__item
+            display: flex
+            gap: 30px
+            .learn__item__block
+                display: flex
+                flex-direction: column
+                gap: 15px
+                border-radius: 10px
+                background: var(--light, #FDFDFD)
+                box-shadow: 5px 5px 30px 0px rgba(101, 101, 101, 0.12)
+                padding: 25px 15px
+                .learn__item__block__title
+                    display: flex
+                    gap: 8px
+                    h3
+                        font-size: 16px
+                .learn__item__block__content
+                    span
+                        width: 240px
+        .core__button 
+            margin: 0 auto
+            background: var(--green, #10B582)
+        
+
+.sale
+    background-image: url(/image/courses/sale/image-sale-girl.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+    padding: 120px 0
+    .sale__items
+        display: flex
+        justify-content: end
+        .sale__item__content
+            display: flex
+            flex-direction: column
+            gap: 20px
+            h3
+                width: 332px
+            span
+                width: 444px
+
+
+.questions
+    padding: 120px 0 0
+    .questions__items
+        display: flex
+        flex-direction: column
+        gap: 60px
+        .questions__item__title
+            text-align: center
+        .questions__item
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 30px
+            justify-content: center
+        .questions__item__block
+            padding: 30px
+            width: 830px
+            border-radius: 10px
+            background: var(--light, #FDFDFD)
+            box-shadow: 5px 5px 30px 0px rgba(101, 101, 101, 0.12)
+            .questions__item__block__title
+                display: flex
+                justify-content: space-between
+                h3
+                    font-size: 22px
+                    width: 670px
+            .questions__item__block__content
+                span
+                    display: flex
+                    width: 640px
+
+
+.footer
+    padding-top: 120px
+    .footer__line
+        height: 1px
+        opacity: 0.1
+        background: #353A5A
+        width: 100%
+    .footer__items
+        display: flex
+        margin: 80px 0 50px
+        gap: 100px
+        .footer__item__content
+            display: flex
+            flex-direction: column
+            gap: 27px
+            a
+                margin-top: 27px
+                width: 116px
+                height: 22px
+            span
+                width: 270px
+
+            .footer__item__image
+                width: 170px
+                height: 22px
+
+        .footer__item__link
+            display: flex
+            flex-direction: column
+            gap: 31px
+            ul
+                display: flex
+                flex-direction: column
+                row-gap: 20px
+            li
+                list-style-type: none
+            a
+                display: flex
+                gap: 20px
+                color: var(--dark, #353A5A)
+                text-decoration: none
+            h4
+                font-size: 16px
+    .footer__item__end
+        display: flex
+        justify-content: space-between
+        .footer__item__prava
+            margin: 30px 0 
+            display: flex
+            gap: 30px                    
